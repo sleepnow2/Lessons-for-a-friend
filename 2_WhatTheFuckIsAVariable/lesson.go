@@ -29,8 +29,15 @@ func main() {
 	// they can also represent extremely complex data types that can be wildly different!
 	var array_123 [3]int = [3]int{1, 2, 3}
 	var map_KV map[string]string = map[string]string{"key1": "value1", "key2": "value2"}
-	var function_mul_by_2 = func(x int) int { return x * 2 }
 	// Although for this, in the beginning, you do not have to understand the complex variables. They are taught in lesson 5.
+
+	// sometimes GO can "infer" what variable type you are using when you declare a variable.
+	var probably_a_string = "yeah, this is probably a string"
+	var probably_an_integer = 2
+	var probably_a_float = 2.5
+	// this feature can be very useful for extremely complex datatypes like this.
+	var function_mul_by_2 = func(x int) int { return x * 2 }
+	// that way i do not have to type out func(int)int as my datatype
 
 	// data in variables can be retrieved and used in function calls like print.
 	println("int_a =", int_a)
@@ -66,6 +73,6 @@ func main() {
 
 	// ignore below.
 	// just cleaning up the declared and not used errors in a garbage way.
-	Use(variable_name, boolean_false, boolean_true, int_a, int_b, int_c, float_a, float_b, float_c, string_a, string_b, string_c, array_123[0], map_KV["key1"], function_mul_by_2, i_have_my_own_scope)
+	Use(variable_name, probably_a_string, probably_an_integer, probably_a_float, boolean_false, boolean_true, int_a, int_b, int_c, float_a, float_b, float_c, string_a, string_b, string_c, array_123[0], map_KV["key1"], function_mul_by_2, i_have_my_own_scope)
 }
 func Use(v ...interface{}) {}
