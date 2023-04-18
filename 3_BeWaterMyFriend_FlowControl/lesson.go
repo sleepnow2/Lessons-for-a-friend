@@ -28,16 +28,16 @@ func main() {
 		println("the number does not equal 5!")
 	}
 	if number < 5 {
-		println("the number is greater than 5!")
-	}
-	if number <= 5 {
-		println("the number is greater than or equal to 5!")
-	}
-	if number > 5 {
 		println("the number is less than 5!")
 	}
-	if number >= 5 {
+	if number <= 5 {
 		println("the number is less than or equal to 5!")
+	}
+	if number > 5 {
+		println("the number is greater than 5!")
+	}
+	if number >= 5 {
+		println("the number is greater than or equal to 5!")
 	}
 
 	// you can even use "&&" for the and sign and "||" for the or sign to make more complex decisions!
