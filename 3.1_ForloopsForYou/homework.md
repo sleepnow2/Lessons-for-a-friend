@@ -11,7 +11,9 @@ you will output the quadrant number (1,2,3,4)
 
 EX:
 10 25 -> 1
+
 -2 -3 -> 3
+
 -1 54 -> 2
 
 _Hint: If statements_
@@ -24,22 +26,33 @@ Basically, you print the numbers from 1 to $n$, replacing any of them divisible 
 If a number is divisible by both $x$ and $y$, then you print FizzBuzz.
 
 INPUT:
-one line that contains integers $x$, $y$, and $n$. where $(1\le x<y<n<1000)$.
+one line that contains integers $x$, $y$, and $n$. where $(1 \le x \ls y \ls n \ls 1000)$.
 
 OUTPUT:
 Print numbers from 1 to $n$ in order, each on their own line, replacing those that are supposed to be replaced following the rules of fizzbuzz.
 
 EX:
+
 2 3 10
+
 1
+
 fizz
+
 buzz
+
 fizz
+
 5
+
 fizzbuzz
+
 7
+
 fizz
+
 buzz
+
 fizz
 
 _hint: modulo. look it up._
