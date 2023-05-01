@@ -18,6 +18,7 @@ print your result to the console and exit the program.
 ex:
 user input = 7
 result = 16
+
 user input = 4
 result = 4
 
